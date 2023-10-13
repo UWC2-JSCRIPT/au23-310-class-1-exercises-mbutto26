@@ -11,6 +11,9 @@ const LARGE_PIZZA_DIAMETER = 17;
 
 const pizzaSmallArea = Math.PI * Math.pow((SMALL_PIZZA_DIAMETER / 2) ** 2);
 const pizzaLargeArea = Math.PI * Math.pow((LARGE_PIZZA_DIAMETER / 2) ** 2);
+
+console.log(pizzaSmallArea);
+console.log(pizzaLargeArea);
 // 2. What is the cost per square inch of each pizza?
 
 // 3. Using the Math object, put together a code snippet
