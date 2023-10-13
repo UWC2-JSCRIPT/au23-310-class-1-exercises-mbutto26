@@ -8,7 +8,7 @@
 
 const SMALL_PIZZA_DIAMETER = 13;
 const LARGE_PIZZA_DIAMETER = 17;
-const SMALL_PIZZA_PRICE = 13.99;
+const SMALL_PIZZA_PRICE = 16.99;
 const LARGE_PIZZA_PRICE = 19.99;
 
 const pizzaSmallArea = Math.PI * (SMALL_PIZZA_DIAMETER / 2) ** 2;
