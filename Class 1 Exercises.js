@@ -8,6 +8,8 @@
 
 const SMALL_PIZZA_DIAMETER = 13;
 const LARGE_PIZZA_DIAMETER = 17;
+const SMALL_PIZZA_PRICE = 13.99;
+const LARGE_PIZZA_PRICE = 19.99;
 
 const pizzaSmallArea = Math.PI * (SMALL_PIZZA_DIAMETER / 2) ** 2;
 const pizzaLargeArea = Math.PI * (LARGE_PIZZA_DIAMETER / 2) ** 2;
@@ -16,6 +18,12 @@ console.log(pizzaSmallArea);
 console.log(pizzaLargeArea);
 
 // 2. What is the cost per square inch of each pizza?
+
+const smallPizzaCostPerSquareInch = SMALL_PIZZA_PRICE / pizzaSmallArea;
+const largePizzaCostPerSquareInch = LARGE_PIZZA_PRICE / pizzaLargeArea;
+
+console.log(smallPizzaCostPerSquareInch);
+console.log(largePizzaCostPerSquareInch);
 
 // 3. Using the Math object, put together a code snippet
 // that allows you to draw a random card with a value
