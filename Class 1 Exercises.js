@@ -28,14 +28,21 @@ console.log(largePizzaCostPerSquareInch);
 // 3. Using the Math object, put together a code snippet
 // that allows you to draw a random card with a value
 // between 1 and 13 (assume ace is 1, jack is 11…)
-let randomNumber = Math.random(1, 13);
+const LOWEST_CARD = 1;
+const HIGHEST_CARD = 13;
+const card1 = Math.ceil(Math.random() * HIGHEST_CARD);
+const card2 = Math.ceil(Math.random() * HIGHEST_CARD);
+const card3 = Math.ceil(Math.random() * HIGHEST_CARD);
 
-console.log(randomNumber);
 // 4. Draw 3 cards and use Math to determine the highest
 // card
-let cardNumber1 = Math.random(1, 13);
-let cardNumber2 = Math.random(1, 13);
-let cardNumber3 = Math.random(1, 13);
+
+let highestCard = Math.max(card1, card2, card3);
+
+console.log(card1);
+console.log(card2);
+console.log(card3);
+console.log(highestCard);
 /**
  * ADDRESS LINE
  */
