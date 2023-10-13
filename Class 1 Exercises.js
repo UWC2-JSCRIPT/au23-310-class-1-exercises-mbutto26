@@ -33,7 +33,9 @@ let randomNumber = Math.random(1, 13);
 console.log(randomNumber);
 // 4. Draw 3 cards and use Math to determine the highest
 // card
-
+let cardNumber1 = Math.random(1, 13);
+let cardNumber2 = Math.random(1, 13);
+let cardNumber3 = Math.random(1, 13);
 /**
  * ADDRESS LINE
  */
