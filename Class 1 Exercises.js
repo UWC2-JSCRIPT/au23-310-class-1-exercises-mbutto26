@@ -6,8 +6,11 @@
 // What is the area for each of these pizzas?
 // (radius would be the listed size - i.e. 13" - divided by 2)
 
-let pizzaSmallArea = `16.99 % 13`;
-let pizzaLargeArea = `19.99 % 17`;
+const SMALL_PIZZA_DIAMETER = 13;
+const LARGE_PIZZA_DIAMETER = 17;
+
+const pizzaSmallArea = Math.PI * Math.pow((SMALL_PIZZA_DIAMETER / 2) ** 2);
+const pizzaLargeArea = Math.PI * Math.pow((LARGE_PIZZA_DIAMETER / 2) ** 2);
 // 2. What is the cost per square inch of each pizza?
 
 // 3. Using the Math object, put together a code snippet
