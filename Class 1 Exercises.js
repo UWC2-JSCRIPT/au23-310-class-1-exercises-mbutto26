@@ -9,8 +9,8 @@
 const SMALL_PIZZA_DIAMETER = 13;
 const LARGE_PIZZA_DIAMETER = 17;
 
-const pizzaSmallArea = Math.PI * Math.pow((SMALL_PIZZA_DIAMETER / 2) ** 2);
-const pizzaLargeArea = Math.PI * Math.pow((LARGE_PIZZA_DIAMETER / 2) ** 2);
+const pizzaSmallArea = Math.PI * (SMALL_PIZZA_DIAMETER / 2) ** 2;
+const pizzaLargeArea = Math.PI * (LARGE_PIZZA_DIAMETER / 2) ** 2;
 
 console.log(pizzaSmallArea);
 console.log(pizzaLargeArea);
