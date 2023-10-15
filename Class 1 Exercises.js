@@ -42,7 +42,7 @@ let highestCard = Math.max(card1, card2, card3);
 console.log(card1);
 console.log(card2);
 console.log(card3);
-console.log(highestCard);
+console.log("highest card is: ", highestCard);
 /**
  * ADDRESS LINE
  */
