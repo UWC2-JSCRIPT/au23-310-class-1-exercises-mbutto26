@@ -52,6 +52,21 @@ console.log("highest card is: ", highestCard);
 // this information to create a formatted address block
 // that could be printed onto an envelope.
 
+let firstName = Marissa;
+let lastName = Butto;
+let streetAddress = `543 Central Way`;
+let city = Kirkland;
+let state = WA;
+let zipCode = 98033;
+
+const formattedAsLines = addressFormatter.format(
+  `firstName lastName`,
+  streetAddress,
+  city,
+  state,
+  zipCode
+);
+
 // 2. You are given a string in this format:
 // firstName lastName(assume no spaces in either)
 // streetAddress
