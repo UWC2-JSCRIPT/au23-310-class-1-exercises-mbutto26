@@ -11,19 +11,19 @@ const LARGE_PIZZA_DIAMETER = 17;
 const SMALL_PIZZA_PRICE = 16.99;
 const LARGE_PIZZA_PRICE = 19.99;
 
-const pizzaSmallArea = Math.PI * (SMALL_PIZZA_DIAMETER / 2) ** 2;
-const pizzaLargeArea = Math.PI * (LARGE_PIZZA_DIAMETER / 2) ** 2;
+const smallPizzaArea = Math.PI * (SMALL_PIZZA_DIAMETER / 2) ** 2;
+const largePizzaArea = Math.PI * (LARGE_PIZZA_DIAMETER / 2) ** 2;
 
-console.log(pizzaSmallArea);
-console.log(pizzaLargeArea);
+console.log(smallPizzaArea);
+console.log(largePizzaArea);
 
 // 2. What is the cost per square inch of each pizza?
 
-const smallPizzaCostPerSquareInch = SMALL_PIZZA_PRICE / pizzaSmallArea;
-const largePizzaCostPerSquareInch = LARGE_PIZZA_PRICE / pizzaLargeArea;
+const smallPizzaCostPerSquareInch = SMALL_PIZZA_PRICE / smallPizzaArea;
+const largePizzaCostPerSquareInch = LARGE_PIZZA_PRICE / largePizzaArea;
 
-console.log(smallPizzaCostPerSquareInch);
-console.log(largePizzaCostPerSquareInch);
+//console.log(smallPizzaCostPerSquareInch);
+//console.log(largePizzaCostPerSquareInch);
 
 // 3. Using the Math object, put together a code snippet
 // that allows you to draw a random card with a value
@@ -39,10 +39,10 @@ const card3 = Math.ceil(Math.random() * HIGHEST_CARD);
 
 let highestCard = Math.max(card1, card2, card3);
 
-console.log(card1);
-console.log(card2);
-console.log(card3);
-console.log("highest card is: ", highestCard);
+//console.log(card1);
+//console.log(card2);
+//console.log(card3);
+//console.log("highest card is: ", highestCard);
 /**
  * ADDRESS LINE
  */
@@ -86,3 +86,5 @@ const formattedAsLines = addressFormatter.format(
 // Starting hint:
 const startDate = new Date(2020, 0, 1);
 const endDate = new Date(2020, 3, 1);
+let midDate = new Date((startDate.getTime() + endDate.getTime()) / 2);
+console.log(midDate);
