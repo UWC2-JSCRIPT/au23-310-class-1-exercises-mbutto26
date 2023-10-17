@@ -52,20 +52,15 @@ let highestCard = Math.max(card1, card2, card3);
 // this information to create a formatted address block
 // that could be printed onto an envelope.
 
-let firstName = Marissa;
-let lastName = Butto;
+let firstName = `Marissa`;
+let lastName = `Butto`;
 let streetAddress = `543 Central Way`;
-let city = Kirkland;
-let state = WA;
-let zipCode = 98033;
+let city = `Kirkland`;
+let state = `,WA`;
+let zipCode = `98033`;
+let fullName = `${firstName} ${lastName}`;
 
-const formattedAsLines = addressFormatter.format(
-  `firstName lastName`,
-  streetAddress,
-  city,
-  state,
-  zipCode
-);
+let address = `${fullName} \n ${streetAddress} \n ${city} \n ${state} \n ${zipCode}`;
 
 // 2. You are given a string in this format:
 // firstName lastName(assume no spaces in either)
@@ -74,6 +69,7 @@ const formattedAsLines = addressFormatter.format(
 //
 // Write code that is able to extract the first name from this string into a variable.
 // Hint: use indexOf, slice, and / or substring
+const fullNameResult = fullName.substring(address);
 
 /**
  * FIND THE MIDDLE DATE
@@ -86,5 +82,5 @@ const formattedAsLines = addressFormatter.format(
 // Starting hint:
 const startDate = new Date(2020, 0, 1);
 const endDate = new Date(2020, 3, 1);
-let midDate = new Date((startDate.getTime() + endDate.getTime()) / 2);
-console.log(midDate);
+const midDate = new Date((startDate.getTime() + endDate.getTime()) / 2);
+//console.log(midDate);
