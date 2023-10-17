@@ -39,10 +39,10 @@ const card3 = Math.ceil(Math.random() * HIGHEST_CARD);
 
 let highestCard = Math.max(card1, card2, card3);
 
-//console.log(card1);
-//console.log(card2);
-//console.log(card3);
-//console.log("highest card is: ", highestCard);
+console.log(card1);
+console.log(card2);
+console.log(card3);
+console.log("highest card is: ", highestCard);
 /**
  * ADDRESS LINE
  */
@@ -83,4 +83,4 @@ const fullNameResult = fullName.substring(address);
 const startDate = new Date(2020, 0, 1);
 const endDate = new Date(2020, 3, 1);
 const midDate = new Date((startDate.getTime() + endDate.getTime()) / 2);
-//console.log(midDate);
+console.log(midDate);
