@@ -8,18 +8,41 @@
 
 const SMALL_PIZZA_DIAMETER = 13;
 const LARGE_PIZZA_DIAMETER = 17;
+const SMALL_PIZZA_PRICE = 16.99;
+const LARGE_PIZZA_PRICE = 19.99;
 
-const pizzaSmallArea = Math.PI * Math.pow((SMALL_PIZZA_DIAMETER / 2) ** 2);
-const pizzaLargeArea = Math.PI * Math.pow((LARGE_PIZZA_DIAMETER / 2) ** 2);
+const smallPizzaArea = Math.PI * (SMALL_PIZZA_DIAMETER / 2) ** 2;
+const largePizzaArea = Math.PI * (LARGE_PIZZA_DIAMETER / 2) ** 2;
+
+console.log(smallPizzaArea);
+console.log(largePizzaArea);
+
 // 2. What is the cost per square inch of each pizza?
+
+const smallPizzaCostPerSquareInch = SMALL_PIZZA_PRICE / smallPizzaArea;
+const largePizzaCostPerSquareInch = LARGE_PIZZA_PRICE / largePizzaArea;
+
+//console.log(smallPizzaCostPerSquareInch);
+//console.log(largePizzaCostPerSquareInch);
 
 // 3. Using the Math object, put together a code snippet
 // that allows you to draw a random card with a value
 // between 1 and 13 (assume ace is 1, jack is 11…)
+const LOWEST_CARD = 1;
+const HIGHEST_CARD = 13;
+const card1 = Math.ceil(Math.random() * HIGHEST_CARD);
+const card2 = Math.ceil(Math.random() * HIGHEST_CARD);
+const card3 = Math.ceil(Math.random() * HIGHEST_CARD);
 
 // 4. Draw 3 cards and use Math to determine the highest
 // card
 
+let highestCard = Math.max(card1, card2, card3);
+
+console.log(card1);
+console.log(card2);
+console.log(card3);
+console.log("highest card is: ", highestCard);
 /**
  * ADDRESS LINE
  */
@@ -29,6 +52,16 @@ const pizzaLargeArea = Math.PI * Math.pow((LARGE_PIZZA_DIAMETER / 2) ** 2);
 // this information to create a formatted address block
 // that could be printed onto an envelope.
 
+let firstName = `Marissa`;
+let lastName = `Butto`;
+let streetAddress = `543 Central Way`;
+let city = `Kirkland`;
+let state = `,WA`;
+let zipCode = `98033`;
+let fullName = `${firstName} ${lastName}`;
+
+let address = `${fullName} \n ${streetAddress} \n ${city} \n ${state} \n ${zipCode}`;
+
 // 2. You are given a string in this format:
 // firstName lastName(assume no spaces in either)
 // streetAddress
@@ -36,6 +69,7 @@ const pizzaLargeArea = Math.PI * Math.pow((LARGE_PIZZA_DIAMETER / 2) ** 2);
 //
 // Write code that is able to extract the first name from this string into a variable.
 // Hint: use indexOf, slice, and / or substring
+const fullNameResult = fullName.substring(address);
 
 /**
  * FIND THE MIDDLE DATE
@@ -46,4 +80,7 @@ const pizzaLargeArea = Math.PI * Math.pow((LARGE_PIZZA_DIAMETER / 2) ** 2);
 // Look online for documentation on Date objects.
 
 // Starting hint:
-const endDate = new Date(2019, 3, 1);
+const startDate = new Date(2020, 0, 1);
+const newEndDate = new Date(2020, 3, 1);
+const midDate = new Date((startDate.getTime() + newEndDate.getTime()) / 2);
+console.log(midDate);
