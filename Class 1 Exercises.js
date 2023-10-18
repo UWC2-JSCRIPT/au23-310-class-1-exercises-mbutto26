@@ -81,6 +81,6 @@ const fullNameResult = fullName.substring(address);
 
 // Starting hint:
 const startDate = new Date(2020, 0, 1);
-const endDate = new Date(2020, 3, 1);
-const midDate = new Date((startDate.getTime() + endDate.getTime()) / 2);
+const newEndDate = new Date(2020, 3, 1);
+const midDate = new Date((startDate.getTime() + newEndDate.getTime()) / 2);
 console.log(midDate);
